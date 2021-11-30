@@ -10,9 +10,13 @@ on:
         branches:
             - main
             - dev
+    workflow_call:
+        secrets:
+            GITHUB_TOKEN:
+                required: true
 
 jobs:
-    build:
+    lint:
         name: Run Super-Linter
         runs-on: ubuntu-latest
 
