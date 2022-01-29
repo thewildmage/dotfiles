@@ -11,10 +11,6 @@ on:
             - main
             - dev
     workflow_call:
-        secrets:
-            GITHUB_TOKEN:
-                description: GitHub token passed from the caller workflow
-                required: true
 
 jobs:
     lint:
